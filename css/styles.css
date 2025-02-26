@@ -322,6 +322,12 @@ img {
 
 /* #region Footer */
 
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
 .footer {
   background-color: var(--navy-blue);
   padding: 100px 0;
@@ -334,7 +340,25 @@ img {
 
 .copyright {
   color: var(--cloud);
+  
+}
+
+.copyright-container {
   max-width: 264px;
+}
+
+.social-container {
+  max-width: 208px;
+}
+
+.social-text {
+  color: var(--white);
+  margin-bottom: 16px;
+}
+
+.icon-list {
+  display: flex;
+  gap: 16px;
 }
 
 /* #endregion */
