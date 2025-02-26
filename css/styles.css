@@ -93,6 +93,21 @@ img {
   display: block;
 }
 
+.nav-list-item:hover {
+  color: var(--ocean);
+}
+
+.nav-list-item:hover::after {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  content: " ";
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--ocean);
+}
+
 .item:hover,
 .item:focus {
   color: var(--ocean);
@@ -143,11 +158,7 @@ img {
 .hero {
   max-width: 1440px;
   margin: 0 auto;
-  background-image: linear-gradient(
-      to bottom,
-      var(--grey-bg),
-      var(--grey-bg)
-  ),
+  background-image: linear-gradient(to bottom, var(--grey-bg), var(--grey-bg)),
     url("../images/people-office.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -217,6 +228,14 @@ img {
   width: calc((100% - 3 * 24px) / 4);
 }
 
+.feature-icon {
+  background-color: var(--cloud);
+  border: 1px solid var(--light-slate);
+  padding: 24px 100px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
 /* #endregion */
 
 /* #region Team */
@@ -234,6 +253,9 @@ img {
   background-color: var(--white);
   width: calc((100% - 3 * 24px) / 4);
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 
 .team-card-info {
