@@ -250,6 +250,9 @@ img {
 }
 
 .team-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: var(--white);
   width: calc((100% - 3 * 24px) / 4);
   border-radius: 0px 0px 4px 4px;
@@ -259,6 +262,9 @@ img {
 }
 
 .team-card-info {
+  width: 232px;
+  display: flex;
+  flex-direction: column;
   padding: 32px 0px;
 }
 
@@ -268,6 +274,27 @@ img {
 
 .text-team {
   text-align: center;
+  margin-bottom: 8px;
+}
+
+.icon-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  list-style: none;
+}
+
+.icon-container {
+  background-color: var(--iris);
+  border-radius: 50%;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 12px;
+  fill: var(--cloud);
 }
 
 /* #endregion */
