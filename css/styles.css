@@ -288,8 +288,8 @@ img {
 
 .icon-list {
   display: flex;
-  gap: 24px;
   justify-content: center;
+  gap: 24px;
   list-style: none;
 }
 
@@ -359,7 +359,7 @@ img {
   width: 100%;
   height: 100%;
   transform: translateY(100%);
-  transition: transform 250ms ease-in-out;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-card:hover .overlay-text {
@@ -378,8 +378,7 @@ img {
 
 .footer .container {
   display: flex;
-  justify-content: space-between;
-  align-items: start;
+  align-items: baseline;
 }
 
 .footer {
@@ -398,6 +397,7 @@ img {
 
 .copyright-container {
   max-width: 264px;
+  margin-right: 120px;
 }
 
 .social-container {
@@ -408,6 +408,7 @@ img {
 .social-text {
   color: var(--white);
   margin-bottom: 16px;
+  font-weight: 500;
 }
 
 .icon-list {
@@ -415,7 +416,8 @@ img {
   gap: 16px;
 }
 
-.social-container .icon-container:hover {
+.social-container .icon-link:hover,
+.social-container .icon-link:focus {
   background-color: var(--green);
 }
 
