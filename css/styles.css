@@ -166,7 +166,7 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url("../images/people-office.png");
+    url(../images/hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -238,6 +238,10 @@ img {
 }
 
 .feature-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
   background-color: var(--cloud);
   border: 1px solid var(--light-slate);
   padding: 24px 100px;
