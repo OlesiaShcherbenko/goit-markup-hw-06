@@ -492,10 +492,6 @@ input::placeholder {
   background-color: rgba(46, 47, 66, 0.4);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  /* display: none;
-  z-index: 1;
-  overflow: auto; */
 }
 
 .modal {
@@ -537,12 +533,12 @@ input::placeholder {
   border: none;
 }
 
-.close-icon {
+.close svg {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close-icon:hover,
-.close-icon:focus {
+.close:hover svg,
+.close:focus svg {
   fill: var(--white);
 }
 
@@ -635,7 +631,7 @@ input::placeholder {
   letter-spacing: 0.04em;
 }
 
-.checkbox-input {
+.custom-checkbox {
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -650,9 +646,12 @@ input::placeholder {
   margin-right: 8px;
 }
 
-.checkbox:checked + .checkbox-input {
+.checkbox:checked + .custom-checkbox {
   background-color: #404bbf;
   border: none;
+}
+
+.checkbox:checked + .custom-checkbox svg {
   fill: #f4f4fd;
 }
 
