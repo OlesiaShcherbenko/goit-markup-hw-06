@@ -437,10 +437,11 @@
         </div>
         <div class="form-container">
           <p class="form-text">Subscribe</p>
-          <form class="form" action="">
-            <label class="email" for="">
+          <form class="form" action="/submit-form" method="post">
+            <label class="email" for="email-input">
               <input
                 class="email-input"
+                id="email-input"
                 name="email"
                 type="email"
                 placeholder="E-mail"
@@ -465,7 +466,7 @@
           </svg>
         </button>
         <p class="modal-title">Leave your contacts and we will call you back</p>
-        <form action="">
+        <form action="/submit-form" method="post">
           <div class="input-container">
             <label class="lable" for="user-name">Name</label>
             <div class="input-container">
