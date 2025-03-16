@@ -24,6 +24,12 @@
             >Web<span class="accent">Studio</span></a
           >
 
+          <button class="menu-btn" type="button">
+            <svg class="menu-icon" width="24" height="24">
+              <use href="./images/menu.svg#icon-menu"></use>
+            </svg>
+          </button>
+
           <ul class="nav-list">
             <li><a class="nav-list-item" href="./index.html">Studio</a></li>
             <li><a class="nav-list-item" href="">Portfolio</a></li>
@@ -44,9 +50,6 @@
             </li>
           </ul>
         </address>
-        <svg class="menu-icon" width="24" height="24">
-          <use href="./images/menu.svg#icon-menu"></use>
-        </svg>
       </div>
     </header>
 
@@ -408,12 +411,15 @@
               <div class="box">
                 <div class="thumb">
                   <img
-                  srcset="./images/online-courses.jpg 1x, ./images/online-courses@2x.jpg 2x"
-                  src="./images/online-courses.jpg"
-                  alt="Online Courses"
-                />
+                    srcset="
+                      ./images/online-courses.jpg    1x,
+                      ./images/online-courses@2x.jpg 2x
+                    "
+                    src="./images/online-courses.jpg"
+                    alt="Online Courses"
+                  />
                 </div>
-                
+
                 <p class="overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -579,5 +585,75 @@
         </form>
       </div>
     </div>
+
+    <!-- #region Mobile menu -->
+    <div class="mobile-menu is-closed">
+      <button class="close" type="button">
+        <svg class="close-icon" width="8" height="8">
+          <use href="./images/icons-1.svg#icon-close"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu-links">
+        <li class="mobile-menu-item">
+          <a href="" class="mobile-menu-link">Studio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="" class="mobile-menu-link">Portfolio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="" class="mobile-menu-link">Contacts</a>
+        </li>
+      </ul>
+
+      <div class="mobile-menu-footer">
+        <address class="mobile-menu-address">
+          <ul class="mobile-menu-address-list">
+            <li>
+              <a class="mobile-menu-address-list-item" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li>
+              <a class="mobile-menu-address-list-item" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+
+        <ul class="mobile-menu-social footer-icon-list">
+          <li class="icon-container">
+            <a class="icon-link" href="https://www.instagram.com/"
+              ><svg class="icon" width="24" height="24">
+                <use href="./images/icons.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="icon-container">
+            <a class="icon-link" href="https://www.instagram.com/"
+              ><svg class="icon" width="24" height="24">
+                <use href="./images/icons.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="icon-container">
+            <a class="icon-link" href="https://www.instagram.com/">
+              <svg class="icon" width="24" height="24">
+                <use href="./images/icons.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="icon-container">
+            <a class="icon-link" href="https://www.instagram.com/">
+              <svg class="icon" width="24" height="24">
+                <use href="./images/icons.svg#linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- #endregion -->
   </body>
 </html>
